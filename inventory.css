@@ -2,12 +2,14 @@
 * {
     margin: 0;
     height: auto;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .main {
     max-width: 100%;
-    height: 740px;
-    background-image: url("back.jpg");
+    height: 876px;
+    background-image: url("new.jpg");
 }
 
 .side-menu {
@@ -36,6 +38,7 @@
     color: white;
     display: flex;
     align-items: center;
+    margin-left: -10%;
 }
 
 .side-menu li a {
@@ -47,13 +50,6 @@
     color: lightblue;
 }
 
-.right-side {
-    width: 80%;
-    height: 55px;
-    background-color: rgb(12, 12, 51);
-    margin-left: 20%;
-    position: absolute;
-}
 
 .container .header {
     position: fixed;
@@ -174,11 +170,57 @@
     display: block;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
+#edit{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+
+#add{
+    background-color: #2937ff; 
+    border: none;
+    color: white;
+    padding: 10px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25%;
+    margin-top: -300px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#delete{
+    background-color: red; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+
 table {
     position: relative;
     z-index: 2;
     left: 60%;
-    top: 50%;
+    top: 52%;
     transform: translate(-50%, -50%);
     width: 70%;
     border-collapse: collapse;
@@ -193,6 +235,7 @@ th {
     padding: 15px 20px;
     text-align: center;
 }
+
 
 th {
     background-color: rgb(12, 12, 51);

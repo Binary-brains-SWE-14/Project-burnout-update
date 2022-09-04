@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +30,7 @@ h3 {
 }
 
 .btn {
-    background: rgb(54, 91, 160);
+    background: rgb(12, 12, 51);
     color: white;
     padding: 5px 10px;
     text-align: center;
@@ -51,12 +53,16 @@ h3 {
 
 table {
     padding: 10px;
+    background-color: #f2f2f2;
 }
+
 
 th,
 td {
+    font-family: 'Open Sans', Sans-serif;
     text-align: left;
     padding: 8px;
+    font-weight: bold;
 }
 
 .side-menu {
@@ -82,7 +88,7 @@ td {
 .side-menu li {
     font-size: 24px;
     padding: 10px 40px;
-    color: white;
+    color: #fff;
     display: flex;
     align-items: center;
 }
@@ -226,6 +232,25 @@ td {
     background: #f1f1f1;
 }
 
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+tr:nth-child(even) {
+    background-color: #e3e3e3;
+    font-family: Sans-serif;
+}
+
+th {
+    background-color: rgb(12, 12, 51);
+    color: #fafafa;
+    /* font-family: 'Open Sans', Sans-serif; */
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
 .container .content .cards {
     padding: 20px 15px;
     display: flex;
@@ -237,13 +262,55 @@ td {
 .container .content .cards .card {
     width: 250px;
     height: 150px;
-    background: white;
+    background: black;
     margin: 20px 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
+
+.container .content .cards .card img{
+  width: 100%;
+  height: 72%;
+  border-radius: 10%;
+  opacity: 50%;
+}
+
+#ad{
+    width: 250px;
+    height: 170px;
+}
+#inv{ 
+    width: 250px;
+    height: 155px;
+}
+
+.container .content .cards .card img:hover{
+    opacity: 30%;
+  }
+
+.container .content .cards .card p{
+    position: absolute;
+    color: #c7c7c7;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  .container .content .cards .card .sell{
+    color: #d6d5c5;
+  }
+  .container .content .cards .card .admin{
+    color: #d6d5c5;
+    font-size: 20px;
+    margin-top: -80px;
+    margin-left: 0%;
+  }
 
 .container .content .content-2 {
     min-height: 60vh;
@@ -261,6 +328,7 @@ td {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
+    border-radius: 13px;
 }
 
 .container .content .content-2 .new-stock {
@@ -271,7 +339,9 @@ td {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
+    border-radius: 4%;
 }
+ 
 
 .container .content .content-2 .new-stock table td:nth-child(1) img {
     height: 40px;
