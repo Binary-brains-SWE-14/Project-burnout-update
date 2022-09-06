@@ -37,3 +37,4 @@ document.querySelector(".sign-out").addEventListener("click", (e) => {
   e.preventDefault();
   signOut(auth);
 });
+
